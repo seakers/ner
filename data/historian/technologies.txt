@@ -1,0 +1,60 @@
+Absorption-band MW radiometer/spectrometer
+Atmospheric lidar
+Broad-band radiometer
+Cloud and precipitation radar
+Communications system
+Data collection system
+Doppler lidar
+Electric field sensor
+GNSS radio-occultation receiver
+GNSS receiver
+Gradiometer/accelerometer
+High resolution optical imager
+High-resolution nadir-scanning IR spectrometer
+High-resolution nadir-scanning SW spectrometer
+Imaging radar (SAR)
+Laser retroreflector
+Lidar altimeter
+Lightning imager
+Limb-scanning IR spectrometer
+Limb-scanning MW spectrometer
+Limb-scanning SW spectrometer
+Magnetometer
+Medium-resolution IR spectrometer
+Medium-resolution spectro-radiometer
+Multi-channel/direction/polarisation radiometer
+Multi-purpose imaging MW radiometer
+Multi-purpose imaging Vis/IR radiometer
+Narrow-band channel IR radiometer
+Non-scanning MW radiometer
+Radar altimeter
+Radar scatterometer
+Radio-positioning system
+Satellite-to-satellite ranging system
+Solar irradiance monitor
+Space environment monitor
+Star tracker
+Atmospheric chemistry
+Atmospheric temperature and humidity sounders
+Cloud profile and rain radars
+Communications
+Data collection
+Earth radiation budget radiometers
+Gravity instruments
+High resolution optical imagers
+Hyperspectral imagers
+Imaging microwave radars
+Imaging multi-spectral radiometers (passive microwave)
+Imaging multi-spectral radiometers (vis/IR)
+In situ
+Lidars
+Lightning sensors
+Magnetic field
+Multiple direction/polarisation radiometers
+Ocean colour instruments
+Other
+Precision orbit
+Radar altimeters
+Scatterometers
+Space environment
+TBD

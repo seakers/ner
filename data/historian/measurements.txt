@@ -1,0 +1,168 @@
+Snow cover
+Snow detection (mask)
+Snow Grain Size
+Snow melting status (wet/dry)
+Snow surface temperature
+Snow water equivalent
+Glacier Area
+Glacier cover
+Glacier motion
+Iceberg fractional cover
+Iceberg height
+Sea-ice Concentration
+Sea-ice cover
+Sea-ice Drift
+Sea-ice surface temperature
+Sea-ice thickness
+Sea-ice type
+Atmospheric Chemistry - BrO (column/profile)
+Atmospheric Chemistry - C2H2 (column/profile)
+Atmospheric Chemistry - C2H6 (column/profile)
+Atmospheric Chemistry - CFC-11 (column/profile)
+Atmospheric Chemistry - CFC-12 (column/profile)
+Atmospheric Chemistry - CH2O (column/profile)
+Atmospheric Chemistry - CH3Br (column/profile)
+Atmospheric Chemistry - CH4 (column/profile)
+Atmospheric Chemistry - CHOCHO (column/profile)
+Atmospheric Chemistry - ClO (column/profile)
+Atmospheric Chemistry - ClONO2 (column/profile)
+Atmospheric Chemistry - CO (column/profile)
+Atmospheric Chemistry - CO2 (column/profile)
+Atmospheric Chemistry - COS (column/profile)
+Atmospheric Chemistry - HCFC-22 (column/profile)
+Atmospheric Chemistry - HCl (column/profile)
+Atmospheric Chemistry - HDO (column/profile)
+Atmospheric Chemistry - HNO3 (column/profile)
+Atmospheric Chemistry - N2O (column/profile)
+Ice sheet topography
+Sea-ice sheet topography
+Atmospheric Chemistry - N2O5 (column/profile)
+Atmospheric Chemistry - NO (column/profile)
+Atmospheric Chemistry - NO2 (column/profile)
+Atmospheric Chemistry - OClO (column/profile)
+Atmospheric Chemistry - OH (column/profile)
+Atmospheric Chemistry - PAN (column/profile)
+Atmospheric Chemistry - PSC (column/profile)
+Atmospheric Chemistry - SF6 (column/profile)
+Atmospheric Chemistry - SO2 (column/profile)
+Diffuse attenuation coefficient (DAC)
+Downwelling (Incoming) long-wave radiation at the Earth surface
+Auroral Emissions
+Crustal Motion
+Crustal plates positioning
+Downwelling (Incoming) short-wave radiation at the Earth surface
+Downwelling (Incoming) solar radiation at TOA
+Long-wave cloud emissivity
+Long-wave Earth surface emissivity
+Short-wave cloud reflectance
+Lightning detection
+Electric Field (vector)
+Electron density profile
+Electron Energy and Pitch Angle Distribution
+Geoid
+Gravity field
+Short-wave Earth surface bi-directional reflectance
+Solar Spectral Irradiance
+Upwelling (Outgoing) long-wave radiation at Earth surface
+Upwelling (Outgoing) long-wave radiation at TOA
+Upwelling (Outgoing) Short-wave Radiation at the Earth Surface
+Lake Area
+Lake Surface Height
+Precipitation index (daily cumulative)
+Gravity gradients
+Ion Density, Drift Velocity, and Temperature
+Magnetic field (scalar)
+Magnetic field (vector)
+Neutral Particle Composition and Flow Velocity
+Upwelling (Outgoing) short-wave radiation at TOA
+Land surface temperature
+Upwelling (Outgoing) spectral radiance at TOA
+Precipitation rate (liquid) at the surface
+Precipitation rate (solid) at the surface
+Total electron content (TEC)
+ULF-HF Electromagnetic Waves
+Ozone profile
+Atmospheric specific humidity (at surface)
+Atmospheric specific humidity (column/profile)
+Water vapour imagery
+Cloud drop size (at cloud top)
+Cloud ice (column/profile)
+Cloud ice content (at cloud top)
+Cloud ice effective radius (column/profile)
+Cloud liquid water (column/profile)
+Cloud optical depth
+Precipitation Profile (liquid or solid)
+Oil spill cover
+Turbulence
+Wind profile (horizontal)
+Cloud cover
+Cloud imagery
+Cloud mask
+Atmospheric pressure (over land surface)
+Atmospheric pressure (over sea surface)
+Atmospheric stability index
+Aerosol absorption optical depth (column/profile)
+Aerosol effective radius (column/profile)
+Aerosol Extinction / Backscatter (column/profile)
+Wind profile (vertical)
+Permafrost
+Wind speed over land surface (horizontal)
+Wind vector over land surface (horizontal)
+Cloud top height
+Cloud top temperature
+Cloud type
+Freezing level height
+Melting layer depth in clouds
+Atmospheric temperature (at surface)
+Atmospheric temperature (column/profile)
+Cloud base height
+Height of the top of the Planetary Boundary Layer
+Height of tropopause
+Aerosol Layer Height
+Aerosol optical depth (column/profile)
+Aerosol Single Scattering Albedo
+Visibility
+Volcanic ash
+Sea surface temperature
+Temperature of tropopause
+Ocean salinity
+Dominant wave direction
+Dominant wave period
+Sea State Wavelength
+Bathymetry
+Ocean dynamic topography
+Ocean surface currents (vector)
+Color dissolved organic matter (CDOM)
+Ocean chlorophyll concentration
+Ocean suspended sediment concentration
+Wind speed over sea surface (horizontal)
+Wind stress
+Wind vector over sea surface (horizontal)
+Ocean imagery and water leaving radiance
+Fire temperature
+Significant wave height
+Wave directional energy frequency spectrum
+Above Ground Biomass (AGB)
+Chlorophyll Fluorescence from Vegetation on Land
+Land cover
+Sea level
+Soil moisture at the surface
+Soil moisture in the roots region
+Black and White Sky Albedo
+Earth surface albedo
+Fractionally absorbed PAR (FPAR)
+Land surface topography
+Leaf Area Index (LAI)
+Normalized Differential Vegetation Index (NDVI)
+Soil type
+Vegetation Canopy (cover)
+Vegetation Canopy (height)
+Active Fire Detection
+Fire area
+Glacier topography
+Photosynthetically Active Radiation (PAR)
+Snow albedo
+Vegetation Cover
+Vegetation type
+Land surface imagery
+Surface Coherent Change Detection
