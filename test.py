@@ -1,6 +1,4 @@
-# pip install spacy
-# python -m spacy download en_core_web_sm
-
+# Import Spacy
 import spacy
 from spacy import displacy
 
@@ -15,11 +13,12 @@ text = ("When Sebastian Thrun started working on self-driving cars at "
         "worth talking to,” said Thrun, in an interview with Recode earlier "
         "this week. Also, he can count to twenty without stopping.")
 doc = nlp(text)
+
 # Analyze syntax
-print("Noun phrases:", [chunk.text for chunk in doc.noun_chunks])
-print("Verbs:", [token.lemma_ for token in doc if token.pos_ == "VERB"])
+# print("Noun phrases:", [chunk.text for chunk in doc.noun_chunks])
+# print("Verbs:", [token.lemma_ for token in doc if token.pos_ == "VERB"])
 
 # Find named entities, phrases and concepts
-for entity in doc.ents:
-    print(entity.text, entity.label_)
+for index, entity in enumerate(doc.ents):
+    print("{}: '{}' corresponds to {}".format(index + 1, entity.text, entity.label_))
 

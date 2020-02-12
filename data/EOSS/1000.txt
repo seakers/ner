@@ -4,12 +4,19 @@
 1000
 --
 what are the features that are shared by the target designs
+what features are shared by the target designs
 what is the feature that is unique to the solutions in the target region
+which feature is unique to the solutions in the target region
 what are the patterns that are found in the target designs
+what patterns are found in the target designs
 what are the patterns that are found in the selected region
+what patterns are found in the selected region
 what are the patterns that are found in good designs
+what patterns are found in good designs
 what are the patterns that are found in the high performance region
+what patterns are found in the high performance region
 what are the recurring patterns within the low-cost region
+what patterns are recurrent within the low-cost region
 what are the driving features
 what is the driving feature
 can you suggest a good feature that describes the target region well

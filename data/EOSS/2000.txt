@@ -5,4 +5,6 @@ design_id design_id
 0100
 --
 why does design ${design_id} have this science benefit
+why does ${design_id} have this science benefit
 why does design ${design_id} have this science score
+why does ${design_id} have this science score

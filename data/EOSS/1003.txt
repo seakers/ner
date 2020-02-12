@@ -7,5 +7,6 @@ number number
 1000
 --
 which of the designs use ${number} instruments in total
-what are the designs that use total ${number} instruments
-what are the designs that assigns ${number} instruments in orbit ${orbit}
+what are the designs that use in total ${number} instruments
+what are the designs that assign ${number} instruments in orbit ${orbit}
+what are the designs that assign ${number} instruments in ${orbit} orbit

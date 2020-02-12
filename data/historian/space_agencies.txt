@@ -118,14 +118,14 @@ GFZ
 SAO
 BATC
 DWD
-Swansea University
+Swansea Univ
 MetNo
 CM SAF
 GLIMS
 NSIDC
-University of Zurich
-University of Hamburg
-University of Cambridge
+Univ of Zurich
+Univ of Hamburg
+Univ of Cambridge
 Technische Universitaet Wien
 LSCE
 UCL-Geomatics
