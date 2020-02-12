@@ -26,8 +26,8 @@ Some of the data has to be parsed a bit first to fit the format that a normal hu
 |  Parameter | Parsing  |
 |---|---|
 | instrument_parameters  |  remove -, # and () |
-|  measurements (eng) |  remove indexing and split , |
-|  orbits |  consider spaces instead of - as well |
+|  measurements (eng) |  remove indexing and split by commas |
+|  orbits |  consider spaces instead of hyphen as well |
 |  measurements (hist) |  remove (), add acronyms, maybe simplify|
 |  missions |  maybe replace hyphen for space |
 
