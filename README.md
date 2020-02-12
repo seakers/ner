@@ -10,3 +10,5 @@ This model will be trained to recognize this 10 entities:
 - MISSION
 - SPACE_AGENCY
 - TECHNOLOGY
+
+For that purpose, a combination of available commands 
