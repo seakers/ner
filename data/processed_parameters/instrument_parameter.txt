@@ -1,0 +1,133 @@
+Accuracy
+Accuracy5
+Accuracy2
+ADCS-requirements
+All weather
+Angular resolution3
+Angular-resolution-azimuth8
+Angular resolution elevation8
+Aperture9
+Aperture azimuth5
+average-data-rate3
+average power6
+avg revisit time cold regions5
+avg revisit time global10
+avg revisit time northern hemisphere10
+avg revisit time southern hemisphere10
+avg-revisit-time-tropics10
+avg revisit time US7
+band
+bandwidth4
+baseline3
+characteristic-orbit
+characteristic-power1
+Concept
+cost
+cost5
+Coverage-of-region-of-interest
+data-rate-duty-cycle6 (default 1.0)
+Day Night
+developed by
+dimension x5
+dimension y10
+dimension-z1
+Doppler
+duty cycle3
+Field-of-regard4
+Field of view6
+Field-of-view-azimuth4
+Field-of-view-elevation9
+flies in
+focal length2
+frequency3
+Geometry
+has deployment mechanism
+High-lat-sensitivity
+Horizontal-Spatial-Resolution
+Horizontal Spatial Resolution1
+Horizontal-Spatial-Resolution2
+Horizontal-Spatial-Resolution-Along-track
+Horizontal Spatial Resolution Along track2
+Horizontal-Spatial-Resolution-Cross-track
+Horizontal-Spatial-Resolution-Cross-track1
+Id
+Illumination
+image-distortion3
+Imaging
+Intent
+Interferometry
+launch date
+lifetime
+mass8
+measurement ids
+mission-architecture
+Name
+number-of-looks3
+num of C band channels
+num-of-Ka-band-channels
+num of Ku band channels
+num-of-L-band-channels
+num-of-mmwave-band-channels
+num of NIR channels
+num of planes2
+num-of-sats-per-plane2
+num of SWIR channels
+num of TIR channels
+num of UV channels
+num of VNIR channels
+num of X band channels
+num-pixels3
+num-pixels-along-track4
+num-pixels-cross-track6
+off axis angle plus minus9
+On board calibration
+orbit-altitude8
+orbit-anomaly5
+orbit-inclination
+orbit RAAN
+orbit-string
+orbit type
+peak data rate8
+peak-power10
+Penetration
+Pointing capability
+Pointing-requirements
+Polarimetry
+power duty cycle4 (default 1.0)
+Priority
+Pulse repetition frequency5
+Radiometric-accuracy
+Radiometric accuracy6
+range-resolution5
+rms-system-instrument1
+rms-system-tides3
+rms-variable-measurement8
+scanning
+scanning angle plus minus6
+sensitivity6
+sensitivity-dBZ1
+sensitivity in cirrus
+sensitivity-in-convective-clouds
+sensitivity in low troposphere PBL
+sensitivity-in-upper-stratosphere
+sensitivity in upper troposphere and stratosphere
+sensitivity-NEDT10
+sensitivity over lands
+sensitivity over oceans
+soil penetration6
+spectral bands
+Spectral-region
+Spectral-resolution
+Spectral resolution5
+Spectral-sampling
+Swath
+Swath4
+Swath2
+Technology Readiness Level
+Temporal resolution
+Temporal-resolution5
+Thermal control
+ThreeD
+Vertical-Spatial-Resolution
+Vertical Spatial Resolution6
+factHistory

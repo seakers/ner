@@ -1,0 +1,275 @@
+1.1.1 aerosol height/optical depth
+1.1.2 aerosol shape, composition, physical and chemical properties
+1.1.3 aerosol scattering properties
+1.1.4 aerosol extinction profiles/vertical concentration
+1.1.5 aerosol size and size distribution
+1.2.1 Atmospheric temperature fields
+1.3.1 Atmospheric humidity -indirect-
+1.3.2 Water vapor transport - Winds
+1.3.3 GPS radio occultation
+1.3.4 Atmospheric pressure
+1.4.1 atmospheric wind speed
+1.4.2 atmospheric wind direction
+1.5.1 Cloud top temperature
+1.5.2 Cloud type
+1.5.3 Cloud amount/distribution -horizontal and vertical-
+1.5.4 cloud mask
+1.6.1 cloud height/optical thickness
+1.6.2 cloud ice particle size distribution
+1.6.3 Cloud particle phase - ice/water transition
+1.7.1 Cloud liquid water and precipitation rate
+1.7.2 Cloud droplet size
+1.7.3 Rain rate, tropical storms, and hurricanes
+1.8.1 H2O
+1.8.2 O3
+1.8.3 CO2
+1.8.4 CH4
+1.8.5 CO
+1.8.6 O2
+1.8.7 NOx-NO, NO2-, N2O5, HNO3
+1.8.8 CH2O and non-CH4 VOC
+1.8.9 CFCs/HFCs
+1.8.10 H2O2, OH, HO2 and isotopes -HDO, H218O-
+1.8.11 SO2
+1.8.12 Vulcanic SO2, OCS and other vulcanic aerosols
+1.8.13 Black carbon and other polluting aerosols
+1.8.14 ClO, BrO, halogen compounds
+1.8.15 Upper-troposphere/stratosphere - Polar Stratospheric Clouds
+1.8.16 Visible atmospheric plumes
+1.8.17 SF6
+1.9.1 Spectrally resolved solar irradiance
+1.9.2 Spectrally resolved IR radiance -200-2000cm-1-
+1.9.3 Spectrally resolved SW radiance -0.3-2um-
+1.9.4 Spectrally resolved UV radiance -0.15-0.3um-
+2.1.1 Albedo and reflectance
+2.2.1 surface deformation
+2.2.2 Hi-res topography
+2.3.1 Freeze/thaw state
+2.3.2 soil moisture
+2.3.3 Carbon net ecosystem exchange NEE
+2.4.1 vegetation type and structure
+2.4.2 vegetation state
+2.4.3 vegetation height
+2.4.4 canopy density
+2.5.1 Surface temperature -land-
+2.6.1 land use
+2.6.2 landcover status
+2.6.3 disaster monitoring
+2.6.4 hydrocarbon reservoir monitoring
+2.6.5 surface composition
+2.6.6 volcano monitoring
+2.6.7 landslides monitoring
+2.6.8 earthquake monitoring
+2.7.1 river and lake elevation
+2.7.2 flood monitoring
+2.7.3 groundwater storage
+3.1.1 Ocean color - 410-680nm -Chlorophyll absorption and fluorescence, pigments, phytoplankton, CDOM-
+3.1.2 Extended ocean color - UV -enhanced DOC, CDOM-
+3.1.3 Extended ocean color - NIR -atmospheric correction-
+3.2.1 Sea level height
+3.2.2 seafloor topography
+3.2.3 significant wave height
+3.2.4 thermal plumes
+3.2.5 river plumes/sediment fluxes
+3.2.6 Ocean mass distribution
+3.3.1 Ocean salinity
+3.4.1 Ocean surface wind speed
+3.4.2 Ocean surface wind direction
+3.5.1 Surface temperature -ocean-
+3.6.1 Ocean wave height and spectrum
+3.7.2 coral reef health/extent
+4.1.1 ice sheet volume
+4.1.2 Glacier surface elevation
+4.1.3 glacier mass balance
+4.1.4 Ice sheet velocity
+4.1.5 Ice Sheet topography
+4.2.1 snow-water equivalence
+4.2.2 snow depth
+4.2.3 snow wetness
+4.2.4 snow cover
+4.2.5 Snow surface temperature
+4.3.1 Sea ice thickness
+4.3.2 Sea ice cover
+4.3.3 Sea ice temperature
+4.3.4 Sea ice concentration
+5.1.1 Geoid and gravity field variations
+5.1.2 magnetic field variations
+5.1.3 Space weather -solar X-ray/EUV, energetic particles, ionosphere-
+A1.Coastal ocean color
+A2.Fire Monitoring
+A3.Lightning Detection
+A4.Clouds and radiation
+A5.Leaf area index
+A6.FaPAR
+A7.TOA bidirectional reflectance
+A8.Total electron content in ionosphere
+A9.Precise Orbit Determination
+N-A
+Snow cover
+Snow detection 
+Snow Grain Size
+Snow melting status 
+Snow surface temperature
+Snow water equivalent
+Glacier Area
+Glacier cover
+Glacier motion
+Iceberg fractional cover
+Iceberg height
+Sea-ice Concentration
+Sea-ice cover
+Sea-ice Drift
+Sea-ice surface temperature
+Sea-ice thickness
+Sea-ice type
+Atmospheric Chemistry - BrO 
+Atmospheric Chemistry - C2H2 
+Atmospheric Chemistry - C2H6 
+Atmospheric Chemistry - CFC-11 
+Atmospheric Chemistry - CFC-12 
+Atmospheric Chemistry - CH2O 
+Atmospheric Chemistry - CH3Br 
+Atmospheric Chemistry - CH4 
+Atmospheric Chemistry - CHOCHO 
+Atmospheric Chemistry - ClO 
+Atmospheric Chemistry - ClONO2 
+Atmospheric Chemistry - CO 
+Atmospheric Chemistry - CO2 
+Atmospheric Chemistry - COS 
+Atmospheric Chemistry - HCFC-22 
+Atmospheric Chemistry - HCl 
+Atmospheric Chemistry - HDO 
+Atmospheric Chemistry - HNO3 
+Atmospheric Chemistry - N2O 
+Ice sheet topography
+Sea-ice sheet topography
+Atmospheric Chemistry - N2O5 
+Atmospheric Chemistry - NO 
+Atmospheric Chemistry - NO2 
+Atmospheric Chemistry - OClO 
+Atmospheric Chemistry - OH 
+Atmospheric Chemistry - PAN 
+Atmospheric Chemistry - PSC 
+Atmospheric Chemistry - SF6 
+Atmospheric Chemistry - SO2 
+Diffuse attenuation coefficient 
+Downwelling  long-wave radiation at the Earth surface
+Auroral Emissions
+Crustal Motion
+Crustal plates positioning
+Downwelling  short-wave radiation at the Earth surface
+Downwelling  solar radiation at TOA
+Long-wave cloud emissivity
+Long-wave Earth surface emissivity
+Short-wave cloud reflectance
+Lightning detection
+Electric Field 
+Electron density profile
+Electron Energy and Pitch Angle Distribution
+Geoid
+Gravity field
+Short-wave Earth surface bi-directional reflectance
+Solar Spectral Irradiance
+Upwelling  long-wave radiation at Earth surface
+Upwelling  long-wave radiation at TOA
+Upwelling  Short-wave Radiation at the Earth Surface
+Lake Area
+Lake Surface Height
+Precipitation index 
+Gravity gradients
+Ion Density, Drift Velocity, and Temperature
+Magnetic field 
+Magnetic field 
+Neutral Particle Composition and Flow Velocity
+Upwelling  short-wave radiation at TOA
+Land surface temperature
+Upwelling  spectral radiance at TOA
+Precipitation rate  at the surface
+Precipitation rate  at the surface
+Total electron content 
+ULF-HF Electromagnetic Waves
+Ozone profile
+Atmospheric specific humidity 
+Atmospheric specific humidity 
+Water vapour imagery
+Cloud drop size 
+Cloud ice 
+Cloud ice content 
+Cloud ice effective radius 
+Cloud liquid water 
+Cloud optical depth
+Precipitation Profile 
+Oil spill cover
+Turbulence
+Wind profile 
+Cloud cover
+Cloud imagery
+Cloud mask
+Atmospheric pressure 
+Atmospheric pressure 
+Atmospheric stability index
+Aerosol absorption optical depth 
+Aerosol effective radius 
+Aerosol Extinction / Backscatter 
+Wind profile 
+Permafrost
+Wind speed over land surface 
+Wind vector over land surface 
+Cloud top height
+Cloud top temperature
+Cloud type
+Freezing level height
+Melting layer depth in clouds
+Atmospheric temperature 
+Atmospheric temperature 
+Cloud base height
+Height of the top of the Planetary Boundary Layer
+Height of tropopause
+Aerosol Layer Height
+Aerosol optical depth 
+Aerosol Single Scattering Albedo
+Visibility
+Volcanic ash
+Sea surface temperature
+Temperature of tropopause
+Ocean salinity
+Dominant wave direction
+Dominant wave period
+Sea State Wavelength
+Bathymetry
+Ocean dynamic topography
+Ocean surface currents 
+Color dissolved organic matter 
+Ocean chlorophyll concentration
+Ocean suspended sediment concentration
+Wind speed over sea surface 
+Wind stress
+Wind vector over sea surface 
+Ocean imagery and water leaving radiance
+Fire temperature
+Significant wave height
+Wave directional energy frequency spectrum
+Above Ground Biomass 
+Chlorophyll Fluorescence from Vegetation on Land
+Land cover
+Sea level
+Soil moisture at the surface
+Soil moisture in the roots region
+Black and White Sky Albedo
+Earth surface albedo
+Fractionally absorbed PAR 
+Land surface topography
+Leaf Area Index 
+Normalized Differential Vegetation Index 
+Soil type
+Vegetation Canopy 
+Vegetation Canopy 
+Active Fire Detection
+Fire area
+Glacier topography
+Photosynthetically Active Radiation 
+Snow albedo
+Vegetation Cover
+Vegetation type
+Land surface imagery
+Surface Coherent Change Detection
