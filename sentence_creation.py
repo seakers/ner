@@ -16,6 +16,7 @@ import json
 import itertools
 
 EOSS_COMMANDS_PATH = "data/EOSS"
+EOSS_SENTENCES_PATH = "data/EOSS_sentences"
 PARAMS_PATH = "data/processed_parameters"
 
 
@@ -47,12 +48,6 @@ def get_param_path(parameters, params_directory_path=PARAMS_PATH):
     return params_paths
 
 def sentence_combinations(command, command_param_placeholders, parameters):
-    all_parameters = obtain_parameters()
-    sorted_parameters = []
-    for element in command_param_placeholders:
-        sorted_parameters.append(all_parameters[parameters[element[2]]])
-    every_possible_combination_of_parameters = [itertools.product(*sorted_parameters)]
-    return every_possible_combination_of_parameters
     """
     TODO: 
         - retrive corresponding lists of parameters
@@ -60,18 +55,51 @@ def sentence_combinations(command, command_param_placeholders, parameters):
         - create every possible combination of them
         - turn every combination into a sentence and append it to a file
     """
-    pass
+    all_parameters = obtain_parameters()
+    sorted_parameters = []
+    for element in command_param_placeholders:
+        sorted_parameters.append(all_parameters[parameters[element[2]]])
+    every_possible_combination_of_parameters = list(itertools.product(*sorted_parameters))
+    params_per_command = len(list(every_possible_combination_of_parameters[0]))
+    every_possible_sentence = []
+    for possible_combination in every_possible_combination_of_parameters:
+        new_sentence = command
+        for p in range(params_per_command):
+            new_sentence = new_sentence.replace("${" + command_param_placeholders[p][2] + "}", possible_combination[p])     
+        every_possible_sentence.append((new_sentence, {"entities": entities_positions(new_sentence, possible_combination, parameters, [place_holder[-1] for place_holder in command_param_placeholders])}))
+    return every_possible_sentence
+
+def entities_positions(sentence, parameters, parameters_mapping, entities):
+    positions = []
+    start = 0
+    for indx, parameter in  enumerate(parameters):
+        start = sentence.find(parameter, start)
+        end = start + len(parameter) - 1
+        entity = parameters_mapping[entities[indx]].upper()
+        positions.append((start, end, entity))
+        start = end
+    return positions
 
 def produce_sentences(path=EOSS_COMMANDS_PATH):
     paths_list = [path + "/" + f_path for f_path in os.listdir(path)]
     for file_path in paths_list:
+        print(file_path)
         commands_info = get_commands(file_path)
-        parameters = {item[0] : item[1] for item in [text.split(" ") for text in commands_info["parameters"]]}  # May be failing
+        try:
+            parameters = {item[0] : item[1] for item in [text.split(" ") for text in commands_info["parameters"]]}
+        except:
+            pass
         commands = commands_info["commands"]
-        for command in commands:
-            command_param_placeholders = get_command_placeholders_positions(command)
-            possible_combinations = sentence_combinations(command, command_param_placeholders, parameters)
-            #TODO: pasar las combinaciones a oraciones y almacenarlas en un archivo
+        output_path = file_path.replace(path, EOSS_SENTENCES_PATH).replace(".txt", ".json")
+        with open(output_path, "w") as output_file:
+            possible_sentences = []
+            for command in commands:
+                command_param_placeholders = get_command_placeholders_positions(command)
+                if len(command_param_placeholders) > 0:
+                    possible_sentences += sentence_combinations(command, command_param_placeholders, parameters)
+                else:
+                    possible_sentences.append([command, {"entities": []}])
+            json.dump(possible_sentences, output_file, indent=2)
 
 # This function opens the parameters files and retrieves them as a dictionary (<param_name>:<list_of_params>)
 def obtain_parameters(path=PARAMS_PATH):
@@ -83,9 +111,5 @@ def obtain_parameters(path=PARAMS_PATH):
     return parameters
 
 if __name__ == "__main__":
-    samp = "data/EOSS/4004.txt"
-    print(get_commands(samp)["commands"][-1])
-    print(get_command_placeholders_positions(get_commands(samp)["commands"][-1]))
-    #produce_sentences()
-    print(obtain_parameters().keys())
+    produce_sentences()
 
