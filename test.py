@@ -3,15 +3,10 @@ import spacy
 from spacy import displacy
 
 # Load English tokenizer, tagger, parser, NER and word vectors
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("models")
 
 # Process whole documents
-text = ("When Sebastian Thrun started working on self-driving cars at "
-        "Google in 2007 when he was 18, 20 percent of the people outside of the company took him "
-        "seriously. “I can tell you very senior CEOs of major American "
-        "car companies would shake my hand and turn away because I wasn’t "
-        "worth talking to,” said Thrun, in an interview with Recode earlier "
-        "this week. Also, he can count to twenty without stopping.")
+text = ("which of the designs have instrument CMIS assigned to orbit LEO 600 polar NA which instruments from UCL-Geomatics do we currently use to measure Turbulence")
 doc = nlp(text)
 
 # Analyze syntax

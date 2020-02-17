@@ -14,6 +14,7 @@ import re
 import os
 import json
 import itertools
+import random
 
 EOSS_COMMANDS_PATH = "data/EOSS"
 EOSS_SENTENCES_PATH = "data/EOSS_sentences"
@@ -62,10 +63,16 @@ def sentence_combinations(command, command_param_placeholders, parameters):
     every_possible_combination_of_parameters = list(itertools.product(*sorted_parameters))
     params_per_command = len(list(every_possible_combination_of_parameters[0]))
     every_possible_sentence = []
-    for possible_combination in every_possible_combination_of_parameters:
+    for possible_combination_tuple in every_possible_combination_of_parameters:
+        possible_combination = list(possible_combination_tuple)
         new_sentence = command
         for p in range(params_per_command):
-            new_sentence = new_sentence.replace("${" + command_param_placeholders[p][2] + "}", possible_combination[p])     
+            if "year" in command_param_placeholders[p][2]:
+                new_year = str(random.randint(1950, 2020))
+                possible_combination[p] = new_year
+                new_sentence = new_sentence.replace("${" + command_param_placeholders[p][2] + "}", new_year)
+            else:
+                new_sentence = new_sentence.replace("${" + command_param_placeholders[p][2] + "}", possible_combination[p])     
         every_possible_sentence.append((new_sentence, {"entities": entities_positions(new_sentence, possible_combination, parameters, [place_holder[-1] for place_holder in command_param_placeholders])}))
     return every_possible_sentence
 
@@ -99,6 +106,8 @@ def produce_sentences(path=EOSS_COMMANDS_PATH):
                     possible_sentences += sentence_combinations(command, command_param_placeholders, parameters)
                 else:
                     possible_sentences.append([command, {"entities": []}])
+            # Shuffle before dumping
+            random.shuffle(possible_sentences)
             json.dump(possible_sentences, output_file, indent=2)
 
 # This function opens the parameters files and retrieves them as a dictionary (<param_name>:<list_of_params>)
@@ -108,6 +117,8 @@ def obtain_parameters(path=PARAMS_PATH):
     for file_path in paths_list:
         with open(file_path, "r") as current_param_file:
             parameters[file_path.split("/")[-1].replace(".txt", "")] = [param.strip("\n") for param in current_param_file.readlines()]
+    # year exception for decreasing complexity
+    parameters["year"] = ["nri"]
     return parameters
 
 if __name__ == "__main__":

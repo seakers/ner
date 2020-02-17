@@ -1,0 +1,43 @@
+-----------------------------Model 1
+- Name: "daphne_entities"
+- TRAIN_DATA size: <=500
+- n_iter: 30
+- base_model: NONE
+- drop: 0.35
+
+Observations: 
+- gradient (or equivalent) seems to be stucked around a point between 800 and 1000
+- after a while it keeps improving
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 4489.412552776306}
+Losses {'ner': 1948.97124134601}
+Losses {'ner': 1815.4649216474106}
+Losses {'ner': 1693.0347360453961}
+Losses {'ner': 1544.0488733216985}
+Losses {'ner': 976.6177784424284}
+Losses {'ner': 1234.0980577643409}
+Losses {'ner': 1131.9077526832014}
+Losses {'ner': 882.8515712833264}
+Losses {'ner': 953.8377552783967}
+Losses {'ner': 1196.5752645508107}
+Losses {'ner': 987.3936979715917}
+Losses {'ner': 1132.165592013147}
+Losses {'ner': 804.8115571740011}
+Losses {'ner': 1023.8783625776966}
+Losses {'ner': 1039.5677662286419}
+Losses {'ner': 1076.8680460703497}
+Losses {'ner': 1026.608085923413}
+Losses {'ner': 755.0296950525235}
+Losses {'ner': 951.9372848702976}
+Losses {'ner': 654.9285097209967}
+Losses {'ner': 855.378645022301}
+Losses {'ner': 678.7416938603727}
+Losses {'ner': 591.6910209382713}
+Losses {'ner': 560.5515034472505}
+Losses {'ner': 958.397553736115}
+Losses {'ner': 649.1730262443768}
+Losses {'ner': 738.2431910281547}
+Losses {'ner': 655.9258121367895}
+Losses {'ner': 444.32084935073686}

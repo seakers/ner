@@ -8,9 +8,9 @@ This model will be trained to recognize:
 - ORBIT
 - SPACE_AGENCY
 - STAKEHOLDER
-- SUB-OBJECTIVE (not sure yet)
+- SUB-OBJECTIVE (not sure yet) (included)
 - TECHNOLOGY
-- AGENT (not sure yet)
+- AGENT (not sure yet) (not included)
 
 and will take advantage of the previously trained model entities: 
 - CARDINAL
