@@ -1,6 +1,6 @@
 200
 --
-vassar_measurement vassar_measurement
+vassar_measurement measurement
 --
 0100
 --

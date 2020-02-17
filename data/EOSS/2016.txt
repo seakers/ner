@@ -1,6 +1,6 @@
 200
 --
-vassar_stakeholder vassar_stakeholder
+vassar_stakeholder stakeholder
 --
 0100
 --

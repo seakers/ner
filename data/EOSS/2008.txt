@@ -1,7 +1,7 @@
 200
 --
 instrument_parameter instrument_parameter
-vassar_instrument vassar_instrument
+vassar_instrument instrument
 --
 0100
 --

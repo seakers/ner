@@ -1,14 +1,14 @@
 # Named Entity Recognition
 This model will be trained to recognize:
-- INSTRUMENT
 - INSTRUMENT_PARAMETER
+- INSTRUMENT
 - MEASUREMENT
-- OBJECTIVE
-- SUB-OBJECTIVE (not sure yet)
-- ORBIT
-- STAKEHOLDER
 - MISSION
+- OBJECTIVE
+- ORBIT
 - SPACE_AGENCY
+- STAKEHOLDER
+- SUB-OBJECTIVE (not sure yet)
 - TECHNOLOGY
 - AGENT (not sure yet)
 
@@ -38,6 +38,7 @@ it is important to keep in mind that although parsing is done to modify some of 
 
 ## PP (Possible Problems)
 - Presence or absence of hash symbol could affect the ability of the model to recognize an entity.
+- Commands with multiple parameters should have some kind of logic exclusion (ex: bla bla from 2019 to 2002 should not be allowed)
 
 ## To Do
 - Change 'vassar_something' for 'something' when it corresponds
