@@ -5,7 +5,7 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
-OUTPUT_DIR = "models"
+MODELS_DIR = "models"
 DATASET_PATH = "data/EOSS_sentences"
 
 def get_train_set(threshold=500, path=DATASET_PATH):
@@ -16,7 +16,7 @@ def get_train_set(threshold=500, path=DATASET_PATH):
             train_data += json.load(data_file)[:threshold]
     return train_data
 
-def main(model="models", new_model_name="daphne_entities", output_dir=OUTPUT_DIR, n_iter=30):
+def main(model=None, new_model_name="daphne_entities_5", models_dir=MODELS_DIR, n_iter=100):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""
@@ -70,10 +70,11 @@ def main(model="models", new_model_name="daphne_entities", output_dir=OUTPUT_DIR
             losses = {}
             for batch in batches:
                 texts, annotations = zip(*batch)
-                nlp.update(texts, annotations, sgd=optimizer, drop=0.35, losses=losses)
+                nlp.update(texts, annotations, sgd=optimizer, drop=0.1, losses=losses)
             print("Losses", losses)
 
     # save model to output directory
+    output_dir = models_dir + "/" + new_model_name
     if output_dir is not None:
         output_dir = Path(output_dir)
         if not output_dir.exists():

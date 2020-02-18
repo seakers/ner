@@ -5,9 +5,9 @@
   "cnn_maxout_pieces":3,
   "nr_feature_tokens":6,
   "deprecation_fixes":{
-    "vectors_name":"spacy_pretrained_vectors"
+    "vectors_name":null
   },
-  "nr_class":58,
+  "nr_class":130,
   "hidden_depth":1,
   "token_vector_width":96,
   "hidden_width":64,

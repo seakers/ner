@@ -1,4 +1,4 @@
------------------------------Model 1
+----------------------------------------------------------------------------------------------Model 1 (DELETED)
 - Name: "daphne_entities"
 - TRAIN_DATA size: <=500
 - n_iter: 30
@@ -41,3 +41,464 @@ Losses {'ner': 649.1730262443768}
 Losses {'ner': 738.2431910281547}
 Losses {'ner': 655.9258121367895}
 Losses {'ner': 444.32084935073686}
+
+
+------------------------------------------------------------------------------------------------------Model 2
+- Name: "daphne_entities"
+- TRAIN_DATA size: <=500
+- n_iter: 20
+- base_model: "en_core_web_sm"
+- drop: 0.35
+
+Observations: 
+- started way worse than the previous experiment (10 times worse)
+- slowly but consistently decreasing losses
+- it is not just improving now
+
+Logs:
+Loaded model 'en_core_web_sm'
+Losses {'ner': 47582.825801131235}
+Losses {'ner': 45801.719451731544}
+Losses {'ner': 45468.17972561895}
+Losses {'ner': 45246.29488963052}
+Losses {'ner': 44933.70249993259}
+Losses {'ner': 44769.69267426797}
+Losses {'ner': 44376.268556476636}
+Losses {'ner': 44206.68637771745}
+Losses {'ner': 44174.400953653494}
+Losses {'ner': 44074.99817721757}
+Losses {'ner': 44087.87211754389}
+Losses {'ner': 43904.03830339907}
+Losses {'ner': 43359.24981199539}
+Losses {'ner': 43555.5708537874}
+Losses {'ner': 44004.42196800396}
+Losses {'ner': 43719.137884859054}
+Losses {'ner': 43531.03373148747}
+Losses {'ner': 43435.11209259271}
+Losses {'ner': 43169.161581589135}
+Losses {'ner': 42699.35215634399}
+
+------------------------------------------------------------------------------------------------------Model 3
+- Name: "daphne_entities_2"
+- TRAIN_DATA size: <=500
+- n_iter: 30
+- base_model: NONE
+- drop: 0.2
+
+Observations: 
+- started better than model 2 and by the 5th iteration it is bellow a thousand 
+- improved, got worse, then improved again
+- bouncing between 600 and 900
+- made it to 390 after a while
+
+Logs:
+(ACCIDENTALLY ERASED THEM)
+
+----------------------------------------------------------------------------------------------------Model 4
+- Name: "daphne_entities_2" (DRIVE) (MODEL NOT SAVED)
+- TRAIN_DATA size: <=200
+- n_iter: 30
+- base_model: NONE
+- drop: 0.35
+
+Observations: 
+- started better and keeps improving by the 5th iteration
+- bouncing around 400, but made it to 340 at some point
+
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 2073.269552979174}
+Losses {'ner': 1388.6238628475169}
+Losses {'ner': 1307.819842815718}
+Losses {'ner': 921.3476050709899}
+Losses {'ner': 758.097082534308}
+Losses {'ner': 717.8943865045678}
+Losses {'ner': 888.1052495905125}
+Losses {'ner': 836.3778616191663}
+Losses {'ner': 754.2681494460693}
+Losses {'ner': 679.9740406204759}
+Losses {'ner': 669.2573379379787}
+Losses {'ner': 562.3351459588935}
+Losses {'ner': 480.05526026612233}
+Losses {'ner': 340.99273439206445}
+Losses {'ner': 361.88883826820233}
+Losses {'ner': 543.7084096632884}
+Losses {'ner': 692.7137613983845}
+Losses {'ner': 678.9115231610708}
+Losses {'ner': 644.3140324419988}
+Losses {'ner': 638.230722959596}
+Losses {'ner': 458.0539907161155}
+Losses {'ner': 555.747720640369}
+Losses {'ner': 563.8842628958106}
+Losses {'ner': 682.5719067029851}
+Losses {'ner': 654.2220424255731}
+Losses {'ner': 518.1541330859318}
+Losses {'ner': 556.3773968273063}
+Losses {'ner': 449.99130807122873}
+Losses {'ner': 512.0942847763977}
+Losses {'ner': 565.4834403758125}
+
+
+----------------------------------------------------------------------------------------------------Model 5
+- Name: "daphne_entities_3"
+- TRAIN_DATA size: <=200
+- n_iter: 50
+- base_model: NONE
+- drop: 0.1
+
+Observations: 
+- started better and keeps improving by the 5th iteration
+- bouncing around 400, but made it to 340 at some point
+
+
+Logs:
+
+
+----------------------------------------------------------------------------------------------------Model 5
+- Name: "daphne_entities_3"
+- TRAIN_DATA size: <=200
+- n_iter: 50
+- base_model: NONE
+- drop: 0.1
+
+Observations: 
+- started better and keeps improving by the 5th iteration
+- bouncing around 300, but made it to 260 at some point
+- keeps improving... made it to 149. Bouncing around 200
+- made it under the 100 losses barrier
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 2054.5344399044343}
+Losses {'ner': 956.8977561557361}
+Losses {'ner': 660.5266328532073}
+Losses {'ner': 714.4165436954358}
+Losses {'ner': 472.3067312033699}
+Losses {'ner': 450.60236490562505}
+Losses {'ner': 465.0195408390295}
+Losses {'ner': 532.5475329125446}
+Losses {'ner': 353.2661778201134}
+Losses {'ner': 448.07613938553465}
+Losses {'ner': 260.4024110189594}
+Losses {'ner': 283.3100723038535}
+Losses {'ner': 397.8478179355974}
+Losses {'ner': 287.96617294973015}
+Losses {'ner': 414.6126144515398}
+Losses {'ner': 276.59801616730834}
+Losses {'ner': 252.597758073547}
+Losses {'ner': 306.85033465835386}
+Losses {'ner': 362.77294995294767}
+Losses {'ner': 268.6340987738645}
+Losses {'ner': 354.15857066023705}
+Losses {'ner': 478.5579266991755}
+Losses {'ner': 335.8227816567651}
+Losses {'ner': 160.5435130482212}
+Losses {'ner': 318.58275966147613}
+Losses {'ner': 272.3196552619842}
+Losses {'ner': 286.98149577997464}
+Losses {'ner': 410.56679936650187}
+Losses {'ner': 220.83293031755062}
+Losses {'ner': 198.29678215562208}
+Losses {'ner': 191.2764843631717}
+Losses {'ner': 311.1782284336754}
+Losses {'ner': 233.78231778869704}
+Losses {'ner': 149.85211276646547}
+Losses {'ner': 251.62896067976365}
+Losses {'ner': 233.92479559542832}
+Losses {'ner': 203.99045918271997}
+Losses {'ner': 190.8944364929864}
+Losses {'ner': 158.56184795935386}
+Losses {'ner': 187.45019079511184}
+Losses {'ner': 139.05466017043898}
+Losses {'ner': 164.72784707630956}
+Losses {'ner': 158.7637137696733}
+Losses {'ner': 235.4191453649659}
+Losses {'ner': 266.08905776944897}
+Losses {'ner': 104.51588206838422}
+Losses {'ner': 141.82606010394196}
+Losses {'ner': 113.05145771676298}
+Losses {'ner': 97.27684681756398}
+Losses {'ner': 156.40202573379742}
+
+----------------------------------------------------------------------------------------------------Model 6
+- Name: "daphne_entities_4" (DRIVE)
+- TRAIN_DATA size: <=200
+- n_iter: 50
+- base_model: NONE
+- drop: 0.35
+
+Observations: 
+- bouncing around 500
+
+
+Logs:
+Losses {'ner': 2213.281689052633}
+Losses {'ner': 1177.7160113540335}
+Losses {'ner': 1175.4917748543664}
+Losses {'ner': 1096.7655487974444}
+Losses {'ner': 947.6613444922688}
+Losses {'ner': 737.2701461280626}
+Losses {'ner': 689.7411357275721}
+Losses {'ner': 878.0137213859631}
+Losses {'ner': 809.6213726866256}
+Losses {'ner': 567.1616730947957}
+Losses {'ner': 550.2780256546306}
+Losses {'ner': 711.3066347551853}
+Losses {'ner': 757.8729462093877}
+Losses {'ner': 651.4865219691875}
+Losses {'ner': 745.19210745882}
+Losses {'ner': 569.2938783031638}
+Losses {'ner': 583.2459491750981}
+Losses {'ner': 574.188810417658}
+Losses {'ner': 512.0607576598262}
+Losses {'ner': 449.577065806898}
+Losses {'ner': 484.7851436920683}
+Losses {'ner': 453.90877675971285}
+Losses {'ner': 627.6702932761472}
+Losses {'ner': 456.965006207423}
+Losses {'ner': 458.38373778113134}
+Losses {'ner': 576.6638358308452}
+Losses {'ner': 730.519119978278}
+Losses {'ner': 582.8878734157382}
+Losses {'ner': 425.72264916455595}
+Losses {'ner': 508.4362204466592}
+Losses {'ner': 360.36363847965396}
+Losses {'ner': 565.0112488016472}
+Losses {'ner': 446.3069266331859}
+Losses {'ner': 421.6016942072162}
+Losses {'ner': 479.1468974229226}
+Losses {'ner': 351.4635238123119}
+Losses {'ner': 371.44046752328416}
+Losses {'ner': 550.8706873493907}
+Losses {'ner': 457.7313567257131}
+Losses {'ner': 411.2572890648238}
+Losses {'ner': 539.3298155891544}
+Losses {'ner': 593.0404296415493}
+Losses {'ner': 415.99321581484975}
+Losses {'ner': 330.7214788835632}
+Losses {'ner': 423.295342787525}
+Losses {'ner': 405.5421300587681}
+Losses {'ner': 459.95925341461583}
+Losses {'ner': 299.31849723692716}
+Losses {'ner': 297.40464639710274}
+Losses {'ner': 303.18246195855227}
+----------------------------------------------------------------------------------------------------Model 7
+- Name: "daphne_entities_5"
+- TRAIN_DATA size: <=500
+- n_iter: 100
+- base_model: NONE
+- drop: 0.1
+
+Observations: 
+- Making strange jumps
+- decreased slower at first
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 3449.8314453990906} 
+Losses {'ner': 1439.6053198740362} 
+Losses {'ner': 1223.3000404487425} 
+Losses {'ner': 1142.3521626912343} 
+Losses {'ner': 957.4128240228113}  
+Losses {'ner': 576.1083656001587}  
+Losses {'ner': 496.978063564674}   
+Losses {'ner': 567.1401856894801}  
+Losses {'ner': 992.5627112295954}  
+Losses {'ner': 525.1740350552673}  
+Losses {'ner': 526.3478034824539}  
+Losses {'ner': 336.53029384808036} 
+Losses {'ner': 408.0256704492788}  
+Losses {'ner': 326.62009662726075} 
+Losses {'ner': 618.5587829956843}  
+Losses {'ner': 385.63562369626067} 
+Losses {'ner': 319.5286410584032}  
+Losses {'ner': 356.57886173877}    
+Losses {'ner': 390.63461575731776} 
+Losses {'ner': 449.9072628592511}  
+Losses {'ner': 328.2962949395468}  
+Losses {'ner': 477.2611389554331}  
+Losses {'ner': 267.37003014343145} 
+Losses {'ner': 476.73009439123933} 
+Losses {'ner': 736.8110663015415}  
+Losses {'ner': 494.765534846486}   
+Losses {'ner': 651.0315758735858}  
+Losses {'ner': 391.7183770141857}  
+Losses {'ner': 394.92839264937476} 
+Losses {'ner': 478.950582624176}   
+Losses {'ner': 517.9077815719805}  
+Losses {'ner': 438.4859895725656}  
+Losses {'ner': 482.0045908220775}  
+Losses {'ner': 465.29741741391285} 
+Losses {'ner': 476.46490187490633} 
+Losses {'ner': 417.8805727614391}  
+Losses {'ner': 368.31439655578845} 
+Losses {'ner': 519.7190490360958}  
+Losses {'ner': 309.9204479828466}  
+Losses {'ner': 227.12681499481144} 
+Losses {'ner': 309.5833650417322}  
+Losses {'ner': 280.57741396905567} 
+Losses {'ner': 463.57721447304084} 
+Losses {'ner': 161.48333767830727} 
+Losses {'ner': 383.34273813451523} 
+Losses {'ner': 265.0286768004418}  
+Losses {'ner': 189.03586370612683} 
+Losses {'ner': 357.8533709865824}  
+Losses {'ner': 447.1699237839431}  
+Losses {'ner': 505.7321471003408}  
+Losses {'ner': 207.13632826344815} 
+Losses {'ner': 249.1578680638688}  
+Losses {'ner': 198.46174082683895} 
+Losses {'ner': 153.013537320685}
+Losses {'ner': 171.19543448594462} 
+Losses {'ner': 185.81480990761406} 
+Losses {'ner': 149.8780673047032}  
+Losses {'ner': 240.16287079554306} 
+Losses {'ner': 203.97152560027533} 
+Losses {'ner': 276.6808514725919}  
+Losses {'ner': 299.04782793296386} 
+Losses {'ner': 235.77016863791843} 
+Losses {'ner': 216.75096823902194} 
+Losses {'ner': 446.15479790178983} 
+Losses {'ner': 342.500747643191}   
+Losses {'ner': 323.0153102489373}  
+Losses {'ner': 230.86611401233563} 
+Losses {'ner': 218.42522776629988}
+Losses {'ner': 226.17856167356896}
+Losses {'ner': 391.9937626798035}
+Losses {'ner': 230.17950565446066}
+Losses {'ner': 189.7841127312147}
+Losses {'ner': 196.8634522438097}
+Losses {'ner': 387.18506711461987}
+Losses {'ner': 275.63977459662493}
+Losses {'ner': 213.75648690093837}
+Losses {'ner': 189.08625217395075}
+Losses {'ner': 262.71986667349415}
+Losses {'ner': 231.5010251565638}
+Losses {'ner': 218.8430121389926}
+Losses {'ner': 178.49599818292705}
+Losses {'ner': 96.16991805524421}
+Losses {'ner': 319.48175471399384}
+Losses {'ner': 330.4089480447019}
+Losses {'ner': 210.28250222436264}
+Losses {'ner': 146.52030794735418}
+Losses {'ner': 269.26287692926905}
+
+----------------------------------------------------------------------------------------------------Model 8
+- Name: "daphne_entities_6" (DRIVE)
+- TRAIN_DATA size: <=200
+- n_iter: 100
+- base_model: NONE
+- drop: 0.15
+
+Observations: 
+- Started lower
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 1913.1187070098995}
+Losses {'ner': 1039.0514437212755}
+Losses {'ner': 1028.9520007291962}
+Losses {'ner': 597.894089590435}
+Losses {'ner': 742.8797263388489}
+Losses {'ner': 545.3267472776702}
+Losses {'ner': 648.251946582123}
+Losses {'ner': 552.4286652384798}
+Losses {'ner': 360.56812387797123}
+Losses {'ner': 283.3369703983617}
+Losses {'ner': 301.6329359794361}
+Losses {'ner': 518.7081507708056}
+Losses {'ner': 266.40182485266104}
+Losses {'ner': 397.44081482450173}
+Losses {'ner': 228.45873716811366}
+Losses {'ner': 296.0051442309508}
+Losses {'ner': 298.05853104086407}
+Losses {'ner': 263.67721609054325}
+Losses {'ner': 196.71848943285113}
+Losses {'ner': 141.3713249127918}
+Losses {'ner': 199.98370414965268}
+Losses {'ner': 167.08047733159452}
+Losses {'ner': 271.1477723350027}
+Losses {'ner': 424.39628347201494}
+Losses {'ner': 233.03496382078924}
+Losses {'ner': 203.41285916723353}
+Losses {'ner': 303.6192068397404}
+Losses {'ner': 287.64561972142025}
+Losses {'ner': 191.98977213765897}
+Losses {'ner': 207.35365974571295}
+Losses {'ner': 288.04825807584604}
+Losses {'ner': 297.51318445384453}
+Losses {'ner': 239.29689313097796}
+Losses {'ner': 360.2896060389886}
+Losses {'ner': 263.8617329414118}
+Losses {'ner': 289.1836715665394}
+Losses {'ner': 292.4192647818623}
+Losses {'ner': 352.1118393277898}
+Losses {'ner': 328.503545380093}
+Losses {'ner': 237.99935597789}
+Losses {'ner': 331.31921413435947}
+Losses {'ner': 178.92936791883804}
+Losses {'ner': 217.54673949627684}
+Losses {'ner': 214.2053847578535}
+Losses {'ner': 133.64738955204322}
+Losses {'ner': 157.82746235342222}
+Losses {'ner': 233.261801360498}
+Losses {'ner': 252.5593012316551}
+Losses {'ner': 86.57719283573314}
+Losses {'ner': 139.9193852617178}
+Losses {'ner': 113.82965008306384}
+Losses {'ner': 111.56824974837309}
+Losses {'ner': 209.69173995029985}
+Losses {'ner': 205.71924362953214}
+Losses {'ner': 285.83343323773073}
+Losses {'ner': 136.8566771471868}
+Losses {'ner': 168.2016275041048}
+Losses {'ner': 186.05222633511934}
+Losses {'ner': 188.18272803540668}
+Losses {'ner': 219.2958068263634}
+Losses {'ner': 185.4836827545039}
+Losses {'ner': 188.82771136839838}
+Losses {'ner': 294.5274291303772}
+Losses {'ner': 247.1575701067157}
+Losses {'ner': 118.15531989195537}
+Losses {'ner': 117.06165262124365}
+Losses {'ner': 169.7858334743312}
+Losses {'ner': 233.48487585012552}
+Losses {'ner': 314.4611408396646}
+Losses {'ner': 110.71327708892444}
+Losses {'ner': 91.52613282699855}
+Losses {'ner': 146.85871141121098}
+Losses {'ner': 206.61402182675505}
+Losses {'ner': 147.32019714524864}
+Losses {'ner': 135.93187732187994}
+Losses {'ner': 207.3998216048978}
+Losses {'ner': 129.61092831992445}
+Losses {'ner': 302.39694781101304}
+Losses {'ner': 187.71114953149817}
+Losses {'ner': 129.1470799021074}
+Losses {'ner': 117.2444869010763}
+Losses {'ner': 267.6314487474112}
+Losses {'ner': 209.03136407899285}
+Losses {'ner': 130.2381379224191}
+Losses {'ner': 129.9836520405734}
+Losses {'ner': 215.66752594466618}
+Losses {'ner': 122.35032974360855}
+Losses {'ner': 178.6625678646853}
+Losses {'ner': 167.30338180537177}
+Losses {'ner': 158.20882245767342}
+Losses {'ner': 156.96372784829447}
+Losses {'ner': 113.7241717066754}
+Losses {'ner': 138.78984822374534}
+Losses {'ner': 190.82193412888992}
+Losses {'ner': 149.2893068190632}
+Losses {'ner': 136.20896438614264}
+Losses {'ner': 208.87743186218202}
+Losses {'ner': 74.9192124601914}
+Losses {'ner': 82.06017873061765}
+Losses {'ner': 158.5668107341446}
+
+
+##########################################################
+From here and forth i'll consider changes on
+- the batch size
+- pipes trained
