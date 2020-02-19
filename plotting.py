@@ -27,5 +27,5 @@ plt.ylabel('NER Losses')
 plt.title('Model Training Metric: NER Loss')
 
 plt.legend()
-plt.ylim([0, 1500])
+plt.ylim([0, 800])
 plt.savefig("line_chart.png")

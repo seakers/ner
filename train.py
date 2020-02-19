@@ -17,7 +17,7 @@ def get_train_set(threshold=500, path=DATASET_PATH):
     random.shuffle(train_data)
     return train_data
 
-def main(model=None, new_model_name="daphne_entities_7", models_dir=MODELS_DIR, n_iter=50):
+def main(model=None, new_model_name="daphne_entities_9", models_dir=MODELS_DIR, n_iter=50):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""
@@ -37,21 +37,23 @@ def main(model=None, new_model_name="daphne_entities_7", models_dir=MODELS_DIR, 
     else:
         ner = nlp.get_pipe("ner")
 
-    ner.add_label("INSTRUMENT")  # add new entity label to entity recognizer
-    ner.add_label("ORBIT")  # add new entity label to entity recognizer
-    ner.add_label("DESIGN_ID")  # add new entity label to entity recognizer
-    ner.add_label("INSTRUMENT_PARAMETER")  # add new entity label to entity recognizer
-    ner.add_label("MEASUREMENT")  # add new entity label to entity recognizer
-    ner.add_label("MISSION")  # add new entity label to entity recognizer
-    ner.add_label("OBJECTIVE")  # add new entity label to entity recognizer
-    ner.add_label("ORBIT")  # add new entity label to entity recognizer
-    ner.add_label("SPACE_AGENCY")  # add new entity label to entity recognizer
-    ner.add_label("STAKEHOLDER")  # add new entity label to entity recognizer
-    ner.add_label("SUBOBJECTIVE")  # add new entity label to entity recognizer
-    ner.add_label("TECHNOLOGY")  # add new entity label to entity recognizer
-    ner.add_label("NOT_PARTIAL_FULL")  # add new entity label to entity recognizer
-    ner.add_label("NUMBER")  # add new entity label to entity recognizer
-    ner.add_label("YEAR")  # add new entity label to entity recognizer
+    # add new entity labels to entity recognizer
+    ner.add_label("INSTRUMENT")  
+    ner.add_label("ORBIT")  
+    ner.add_label("DESIGN_ID")  
+    ner.add_label("INSTRUMENT_PARAMETER")  
+    ner.add_label("MEASUREMENT")  
+    ner.add_label("MISSION")  
+    ner.add_label("OBJECTIVE")  
+    ner.add_label("ORBIT")  
+    ner.add_label("SPACE_AGENCY")  
+    ner.add_label("STAKEHOLDER")  
+    ner.add_label("SUBOBJECTIVE")  
+    ner.add_label("TECHNOLOGY")  
+    ner.add_label("NOT_PARTIAL_FULL")  
+    ner.add_label("NUMBER")  
+    ner.add_label("YEAR")  
+    ner.add_label("AGENT")  
 
 
     if model is None:
@@ -59,6 +61,7 @@ def main(model=None, new_model_name="daphne_entities_7", models_dir=MODELS_DIR, 
     else:
         optimizer = nlp.resume_training()
     move_names = list(ner.move_names)
+    
     # get names of other pipes to disable them during training
     pipe_exceptions = ["ner", "trf_wordpiecer", "trf_tok2vec"]
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe not in pipe_exceptions]

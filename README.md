@@ -35,6 +35,7 @@ it is important to keep in mind that although parsing is done to modify some of 
 
 ## Design Decisions
 - Crossing every possible command with every possible parameter. Choosing a train, val and test set from it.
+- Should design ids have more or less than 3 digits and have or not a D (?)
 
 ## PP (Possible Problems)
 - Presence or absence of hash symbol could affect the ability of the model to recognize an entity.
