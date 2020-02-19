@@ -81,7 +81,7 @@ def entities_positions(sentence, parameters, parameters_mapping, entities):
     start = 0
     for indx, parameter in  enumerate(parameters):
         start = sentence.find(parameter, start)
-        end = start + len(parameter) - 1
+        end = start + len(parameter)
         entity = parameters_mapping[entities[indx]].upper()
         positions.append((start, end, entity))
         start = end

@@ -14,9 +14,10 @@ def get_train_set(threshold=500, path=DATASET_PATH):
     for file_path in paths_list:
         with open(file_path, "r") as data_file:
             train_data += json.load(data_file)[:threshold]
+    random.shuffle(train_data)
     return train_data
 
-def main(model=None, new_model_name="daphne_entities_5", models_dir=MODELS_DIR, n_iter=100):
+def main(model=None, new_model_name="daphne_entities_7", models_dir=MODELS_DIR, n_iter=50):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""
@@ -62,7 +63,7 @@ def main(model=None, new_model_name="daphne_entities_5", models_dir=MODELS_DIR, 
     pipe_exceptions = ["ner", "trf_wordpiecer", "trf_tok2vec"]
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe not in pipe_exceptions]
     with nlp.disable_pipes(*other_pipes):  # only train NER
-        sizes = compounding(1.0, 4.0, 1.001)
+        sizes = compounding(1.0, 20.0, 1.01)
         # batch up the examples using spaCy's minibatch
         for itn in range(n_iter):
             random.shuffle(TRAIN_DATA)
@@ -70,7 +71,7 @@ def main(model=None, new_model_name="daphne_entities_5", models_dir=MODELS_DIR, 
             losses = {}
             for batch in batches:
                 texts, annotations = zip(*batch)
-                nlp.update(texts, annotations, sgd=optimizer, drop=0.1, losses=losses)
+                nlp.update(texts, annotations, sgd=optimizer, drop=0.15, losses=losses)
             print("Losses", losses)
 
     # save model to output directory

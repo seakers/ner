@@ -497,6 +497,83 @@ Losses {'ner': 74.9192124601914}
 Losses {'ner': 82.06017873061765}
 Losses {'ner': 158.5668107341446}
 
+----------------------------------------------------------------------------------------------------Model 9
+- Name: "daphne_entities_7"
+- TRAIN_DATA size: <=500
+- n_iter: 50
+- base_model: None
+- drop: 0.15
+- compounding(1.0, 20.0, 1.01)
+
+Observations: 
+- Many values bellow 100 losses (may do better than previous experiments)
+- Worked way better than previous models. Apparentlty changing the batch size was a good way to go.
+
+Logs:
+Created blank 'en' model
+Losses {'ner': 2681.08407204496}
+Losses {'ner': 281.22051301537283}
+Losses {'ner': 237.47801805985154}
+Losses {'ner': 64.1701811880434}
+Losses {'ner': 99.18399256903531}
+Losses {'ner': 129.19799708378804}
+Losses {'ner': 165.07780073419664}
+Losses {'ner': 103.84054471599256}
+Losses {'ner': 173.7821476639761}
+Losses {'ner': 93.55485611681804}
+Losses {'ner': 119.55119675265375}
+Losses {'ner': 178.88498659570044}
+Losses {'ner': 246.0324880439956}
+Losses {'ner': 46.240846830180054}
+Losses {'ner': 105.8170248063347}
+Losses {'ner': 66.46486627835213}
+Losses {'ner': 79.56496718099571}
+Losses {'ner': 107.57994276989574}
+Losses {'ner': 128.3595013483751}
+Losses {'ner': 74.56817598498843}
+Losses {'ner': 102.28845472347348}
+Losses {'ner': 109.69358231618527}
+Losses {'ner': 36.6684506829047}
+Losses {'ner': 53.52997271589325}
+Losses {'ner': 143.47032399164004}
+Losses {'ner': 80.1023665984627}
+Losses {'ner': 46.19477698602909}
+Losses {'ner': 85.83890229071834}
+Losses {'ner': 95.38741255330774}
+Losses {'ner': 125.95137384211657}
+Losses {'ner': 132.01208717000335}
+Losses {'ner': 108.49900407940223}
+Losses {'ner': 46.369338541922446}
+Losses {'ner': 16.8708368643576}
+Losses {'ner': 34.81801773145697}
+Losses {'ner': 78.2624103369489}
+Losses {'ner': 37.221733515597286}
+Losses {'ner': 54.62656470961585}
+Losses {'ner': 113.98512354375615}
+Losses {'ner': 157.59608721894435}
+Losses {'ner': 36.45097117364722}
+Losses {'ner': 93.49529991232464}
+Losses {'ner': 103.84361246149362}
+Losses {'ner': 38.07030115510527}
+Losses {'ner': 60.3517619949948}
+Losses {'ner': 79.84108543683824}
+Losses {'ner': 88.92015623195216}
+Losses {'ner': 73.19035835107215}
+Losses {'ner': 107.13562184138299}
+Losses {'ner': 109.7847997866482}
+
+----------------------------------------------------------------------------------------------------Model 10
+- Name: "daphne_entities_6" (DRIVE)
+- TRAIN_DATA size: <=1000
+- n_iter: 50
+- base_model: NONE
+- drop: 0.08
+
+Observations: 
+
+Logs:
+
+
 
 ##########################################################
 From here and forth i'll consider changes on
