@@ -43,8 +43,9 @@ it is important to keep in mind that although parsing is done to modify some of 
 - May be assigning more parameters that correspond to certain commands.
 
 ## To Do
-- Change 'vassar_something' for 'something' when it corresponds
 - May be good to also train it on responses
+- improve design id recognition
+- make it possible to run everything from the terminal
 
 ## Explanation of every function
 
@@ -58,3 +59,10 @@ it is important to keep in mind that although parsing is done to modify some of 
 | `entities_positions()` | Returns the positions of every entity after beeing replaced into the sentence. |
 | `produce_sentences()` | Main function that reads every `EOSS` file and turns it into a `.json` file at `EOSS_sentences`. Every sentence is marked with their parameters respective position.|
 | `obtain_parameters()` | This function opens the parameters files and retrieves them as a dictionary `<param_name>:<list_of_params>`|
+
+
+## If want to change list of parameters or commands
+1. Change the file you want to change.
+2. Then run `python3 sentence_creation.py`
+3. Run `python3 train.py` to train the model with the updated parameters
+4. Give it a try with `python3 test.py <path_to_model_to_be_used> <text_to_be_tested>`

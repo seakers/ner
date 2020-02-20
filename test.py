@@ -1,6 +1,5 @@
 # Import Spacy
 import spacy
-from spacy import displacy
 from sys import argv
 
 if __name__ == "__main__":

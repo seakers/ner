@@ -688,6 +688,70 @@ Losses {'ner': 53.85079319414626}
 Losses {'ner': 56.667415455668156}
 Losses {'ner': 43.25541086819246}
 
+----------------------------------------------------------------------------------------------------Model 12
+- Name: "daphne_entities_10"
+- TRAIN_DATA size: <=500
+- n_iter: 50
+- base_model: None
+- drop: 0.08
+- compounding(1.0, 20.0, 1.01)
+
+Observations: 
+- Added design ids with lower case d
+Logs:
+Created blank 'en' model
+Losses {'ner': 1976.9088666196917}
+Losses {'ner': 149.7707267165616}
+Losses {'ner': 81.17085431810382}
+Losses {'ner': 145.53593073998508}
+Losses {'ner': 114.21396307928578}
+Losses {'ner': 80.37160539518091}
+Losses {'ner': 98.17923599981124}
+Losses {'ner': 68.12335234041375}
+Losses {'ner': 95.18181114323505}
+Losses {'ner': 41.31802224078324}
+Losses {'ner': 218.45205884454435}
+Losses {'ner': 146.88906575905708}
+Losses {'ner': 212.36282585540454}
+Losses {'ner': 163.14899644237053}
+Losses {'ner': 79.53146991962089}
+Losses {'ner': 50.560302062056124}
+Losses {'ner': 109.83069869493356}
+Losses {'ner': 20.82505264139287}
+Losses {'ner': 137.1122173341244}
+Losses {'ner': 33.18704616356511}
+Losses {'ner': 78.15419552597123}
+Losses {'ner': 16.04154319377411}
+Losses {'ner': 67.25053764470196}
+Losses {'ner': 90.59549927410205}
+Losses {'ner': 115.58563338275947}
+Losses {'ner': 37.15478269416553}
+Losses {'ner': 51.2469898042379}
+Losses {'ner': 44.569056554295365}
+Losses {'ner': 36.31704184551225}
+Losses {'ner': 22.944811704453343}
+Losses {'ner': 13.417256825756583}
+Losses {'ner': 83.02078960457492}
+Losses {'ner': 34.55937518991354}
+Losses {'ner': 138.9296808594498}
+Losses {'ner': 41.83830368385573}
+Losses {'ner': 56.10362712799656}
+Losses {'ner': 29.732412185981087}
+Losses {'ner': 116.26259076290013}
+Losses {'ner': 84.91507720985786}
+Losses {'ner': 12.200101485332798}
+Losses {'ner': 2.0437406908511666}
+Losses {'ner': 125.96461105059619}
+Losses {'ner': 83.10135084394047}
+Losses {'ner': 34.40092122961848}
+Losses {'ner': 50.92230739725534}
+Losses {'ner': 35.85751559567828}
+Losses {'ner': 40.246147096926244}
+Losses {'ner': 135.30439976513284}
+Losses {'ner': 92.4254788599116}
+Losses {'ner': 92.80136534879689}
+
+
 
 ##########################################################
 From here and forth i'll consider changes on
