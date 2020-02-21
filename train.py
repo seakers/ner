@@ -17,7 +17,7 @@ def get_train_set(threshold=500, path=DATASET_PATH):
     random.shuffle(train_data)
     return train_data
 
-def main(model=None, new_model_name="daphne_entities_10", models_dir=MODELS_DIR, n_iter=50):
+def main(model=None, new_model_name="daphne_entities_11", models_dir=MODELS_DIR, n_iter=50):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""
@@ -74,7 +74,7 @@ def main(model=None, new_model_name="daphne_entities_10", models_dir=MODELS_DIR,
             losses = {}
             for batch in batches:
                 texts, annotations = zip(*batch)
-                nlp.update(texts, annotations, sgd=optimizer, drop=0.08, losses=losses)
+                nlp.update(texts, annotations, sgd=optimizer, drop=0.2, losses=losses)
             print("Losses", losses)
 
     # save model to output directory
