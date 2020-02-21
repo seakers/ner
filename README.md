@@ -11,13 +11,11 @@ This model will be trained to recognize:
 - SUB-OBJECTIVE (not sure yet) (included)
 - TECHNOLOGY
 - AGENT (not sure yet) (not included)
+- NUMBER
+- NOT_PARTIAL_FULL
+- YEAR
 
-and will take advantage of the previously trained model entities: 
-- CARDINAL
-- PERCENT
-- DATE (year? not sure yet)
-
-For that purpose, a combination of available commands and their possible parameters will be made to create enough data to train the model on this new entities. The commands and their available parameters can be find inside the `data` directory.
+For that purpose, a combination of available commands and their possible parameters was made to create enough data to train the model on this new entities. The commands and their available parameters can be find inside the `data` directory.
 
 
 ## Data Processing for Training
@@ -57,11 +55,20 @@ it is important to keep in mind that although parsing is done to modify some of 
 | `get_param_paths()` | Given a list of parameters ("year1 year") and a parameters dir, returns a path for where they are.|
 | `sentence_combinations()` | Given a command, it's placeholders and the parameters it uses, it retrieves every possible sentence created by the combination of them.|
 | `entities_positions()` | Returns the positions of every entity after beeing replaced into the sentence. |
-| `produce_sentences()` | Main function that reads every `EOSS` file and turns it into a `.json` file at `EOSS_sentences`. Every sentence is marked with their parameters respective position.|
 | `obtain_parameters()` | This function opens the parameters files and retrieves them as a dictionary `<param_name>:<list_of_params>`|
+| `produce_sentences()` | Main function that reads every `EOSS` file and turns it into a `.json` file at `EOSS_sentences`. Every sentence is marked with their parameters respective position.|
 
+#### Functions from `train.py`
+|  Function | Purpose  |
+|---|---|
+| `get_train_set()`  | Gets the minimum between the amount of sentences inside every dataset file and a given threshold to build a training set. Returns the training set. |
+| `main()`  | Trains the model. |
 
-## If want to change list of parameters or commands
+## Observations
+- Testing the model on sentences that the model hasn't been trained on doesnt return good predictions unless a "clue" is given. For example it wont be able to recognize the design id in "how can d309 be improved" but it will if the sentence is changed to "how can design d309 be improved".
+- NOT_PARTIAL_FULL seems not to work with fractions.
+
+## If you want to change list of parameters or commands
 1. Change the file you want to change.
 2. Then run `python3 sentence_creation.py`
 3. Run `python3 train.py` to train the model with the updated parameters

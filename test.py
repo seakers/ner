@@ -9,10 +9,6 @@ if __name__ == "__main__":
     print("\nModel: {}\nText: {}\n".format(model, text))
     nlp = spacy.load(model)
     doc = nlp(text)
-    # Analyze syntax
-    # print("Noun phrases:", [chunk.text for chunk in doc.noun_chunks])
-    # print("Verbs:", [token.lemma_ for token in doc if token.pos_ == "VERB"])
-
 
     # Find named entities, phrases and concepts
     for index, entity in enumerate(doc.ents):

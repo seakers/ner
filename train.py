@@ -5,9 +5,11 @@ from pathlib import Path
 import spacy
 from spacy.util import minibatch, compounding
 
+# Models main path and dataset path
 MODELS_DIR = "models"
 DATASET_PATH = "data/EOSS_sentences"
 
+#
 def get_train_set(threshold=500, path=DATASET_PATH):
     paths_list = [path + "/" + f_path for f_path in os.listdir(path)]
     train_data = []
