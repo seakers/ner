@@ -9,17 +9,18 @@ from spacy.util import minibatch, compounding
 MODELS_DIR = "models"
 DATASET_PATH = "data/EOSS_sentences"
 
-#
 def get_train_set(threshold=500, path=DATASET_PATH):
     paths_list = [path + "/" + f_path for f_path in os.listdir(path)]
     train_data = []
     for file_path in paths_list:
         with open(file_path, "r") as data_file:
-            train_data += json.load(data_file)[:threshold]
+            data = json.load(data_file)
+            random.shuffle(data)
+            train_data += data[:threshold]
     random.shuffle(train_data)
     return train_data
 
-def main(model=None, new_model_name="daphne_entities_11", models_dir=MODELS_DIR, n_iter=50):
+def main(model=None, new_model_name="daphne_entities_12", models_dir=MODELS_DIR, n_iter=50):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""

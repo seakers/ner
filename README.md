@@ -1,5 +1,5 @@
 # Named Entity Recognition
-This model will be trained to recognize:
+This model will be trained to recognize these entities:
 - INSTRUMENT_PARAMETER
 - INSTRUMENT
 - MEASUREMENT
@@ -8,9 +8,9 @@ This model will be trained to recognize:
 - ORBIT
 - SPACE_AGENCY
 - STAKEHOLDER
-- SUB-OBJECTIVE (not sure yet) (included)
+- SUB_OBJECTIVE
 - TECHNOLOGY
-- AGENT (not sure yet) (not included)
+- AGENT
 - NUMBER
 - NOT_PARTIAL_FULL
 - YEAR
@@ -19,31 +19,31 @@ For that purpose, a combination of available commands and their possible paramet
 
 
 ## Data Processing for Training
-Some of the data has to be parsed a bit first to fit the format that a normal human would use to execute commands.
+Some of the data had to be parsed a bit first to fit the format that a normal human would use to execute commands. Here is a table with the main format alternatives that have been considered.
 
 |  Parameter | Parsing  |
 |---|---|
 | instrument_parameters  |  remove -, # and () |
-|  measurements (eng) |  remove indexing and split by commas |
 |  orbits |  consider spaces instead of hyphen as well |
+|  measurements (eng) |  remove indexing and split by commas |
 |  measurements (hist) |  remove (), add acronyms, maybe simplify|
 |  missions |  maybe replace hyphen for space |
 
 it is important to keep in mind that although parsing is done to modify some of the parameters from the list, this is just with the purpose of creating more human like expressions to train the model. The database will still need the original term in order to make a query.
 
 ## Design Decisions
-- Crossing every possible command with every possible parameter. Choosing a train, val and test set from it.
-- Should design ids have more or less than 3 digits and have or not a D (?)
+- Crossing every possible command with every possible parameter. Choosing a train and test set from it.
 
 ## PP (Possible Problems)
-- Presence or absence of hash symbol could affect the ability of the model to recognize an entity.
-- Commands with multiple parameters should have some kind of logic exclusion (ex: bla bla from 2019 to 2002 should not be allowed).
-- May be assigning more parameters that correspond to certain commands.
+- Presence or absence of hash symbol could affect the ability of the model to recognize an entity. // Should not matter now as data has been pre-processed.
+- Commands with multiple parameters should have some kind of logic exclusion (ex: bla bla from 2019 to 2002 should not be allowed). // Update: It actually should be alloed.
+- More sentences without parameters are needed to train!
 
 ## To Do
-- May be good to also train it on responses
-- improve design id recognition
-- make it possible to run everything from the terminal
+- ~~May be good to also train it on responses~~ (not really sure)
+- ~~Improve design id recognition~~ (improved by considering lower case and shorter numbers)
+- Make it possible to run everything from the terminal
+- May be assigning more parameters that correspond to certain commands.
 
 ## Explanation of every function
 
@@ -65,10 +65,10 @@ it is important to keep in mind that although parsing is done to modify some of 
 | `main()`  | Trains the model. |
 
 ## Observations
-- Testing the model on sentences that the model hasn't been trained on doesnt return good predictions unless a "clue" is given. For example it wont be able to recognize the design id in "how can d309 be improved" but it will if the sentence is changed to "how can design d309 be improved".
+- Testing the model on sentences that the model hasn't been trained on doesn't return good predictions unless a "clue" is given. For example it wont be able to recognize the design id in "how can d309 be improved" but it will if the sentence is changed to "how can design d309 be improved".
 - NOT_PARTIAL_FULL seems not to work with fractions.
 
-## If you want to change list of parameters or commands
+## If you want to change the list of parameters or commands
 1. Change the file you want to change.
 2. Then run `python3 sentence_creation.py`
 3. Run `python3 train.py` to train the model with the updated parameters

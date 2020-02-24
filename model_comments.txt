@@ -818,3 +818,17 @@ Losses {'ner': 51.54487109349253}
 Losses {'ner': 70.27768813140946}
 Losses {'ner': 187.82284390621797}
 Losses {'ner': 105.33920185543786}
+
+
+----------------------------------------------------------------------------------------------------Model 14
+- Name: "daphne_entities_12"
+- TRAIN_DATA size: <=500
+- n_iter: 50
+- base_model: None
+- drop: 0.2
+- compounding(1.0, 20.0, 1.01)
+
+Observations: 
+- Every file will be shuffled before beeing cut to the threshold
+
+Logs:
