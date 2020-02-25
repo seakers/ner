@@ -832,3 +832,67 @@ Observations:
 - Every file will be shuffled before beeing cut to the threshold
 
 Logs:
+Created blank 'en' model
+Losses {'ner': 3022.143869583192}
+Losses {'ner': 317.8798165109055}
+Losses {'ner': 149.42946221904788}
+Losses {'ner': 195.40701216356769}
+Losses {'ner': 216.69621343049977}
+Losses {'ner': 170.3129496840264}
+Losses {'ner': 102.2241257400462}
+Losses {'ner': 278.94783986230306}
+Losses {'ner': 142.9512309345215}
+Losses {'ner': 208.25257072620929}
+Losses {'ner': 237.5190265004668}
+Losses {'ner': 159.81755343758385}
+Losses {'ner': 254.2707164686665}
+Losses {'ner': 198.29061048761056}
+Losses {'ner': 73.35539401878732}
+Losses {'ner': 154.54314112036332}
+Losses {'ner': 118.98169222047227}
+Losses {'ner': 112.3571455309112}
+Losses {'ner': 132.60869480512727}
+Losses {'ner': 54.36318727244306}
+Losses {'ner': 50.163872862509436}
+Losses {'ner': 159.02129278491725}
+Losses {'ner': 106.23736751671346}
+Losses {'ner': 91.68372101384386}
+Losses {'ner': 151.42880618650636}
+Losses {'ner': 140.07751944893508}
+Losses {'ner': 151.9836076487193}
+Losses {'ner': 140.94471651488394}
+Losses {'ner': 235.61834692063692}
+Losses {'ner': 168.88081216155285}
+Losses {'ner': 78.91215506548345}
+Losses {'ner': 150.64172209156195}
+Losses {'ner': 124.84446397034979}
+Losses {'ner': 159.69600958073525}
+Losses {'ner': 132.20704331396354}
+Losses {'ner': 78.99060776187741}
+Losses {'ner': 100.47166234541179}
+Losses {'ner': 86.67934229552549}
+Losses {'ner': 160.7317732729829}
+Losses {'ner': 160.28628778323923}
+Losses {'ner': 185.73646931303162}
+Losses {'ner': 186.11257327441518}
+Losses {'ner': 146.9169765169062}
+Losses {'ner': 144.91393271384894}
+Losses {'ner': 108.1717042037763}
+Losses {'ner': 103.02355392660508}
+Losses {'ner': 89.77526522078111}
+Losses {'ner': 72.1736728644036}
+Losses {'ner': 48.790291341258936}
+Losses {'ner': 60.35584769824468}
+
+----------------------------------------------------------------------------------------------------Model 15
+- Name: "daphne_entities_13"
+- TRAIN_DATA size: <=500
+- n_iter: 100
+- base_model: None
+- drop: 0.2
+- compounding(1.0, 20.0, 1.01)
+
+Observations: 
+- Every file will be shuffled before beeing cut to the threshold
+
+Logs:

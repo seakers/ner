@@ -20,7 +20,7 @@ def get_train_set(threshold=500, path=DATASET_PATH):
     random.shuffle(train_data)
     return train_data
 
-def main(model=None, new_model_name="daphne_entities_12", models_dir=MODELS_DIR, n_iter=50):
+def main(model=None, new_model_name="daphne_entities_13", models_dir=MODELS_DIR, n_iter=100):
     """Obtain Training Data"""
     TRAIN_DATA = get_train_set()
     """Set up the pipeline and entity recognizer, and train the new entity."""
